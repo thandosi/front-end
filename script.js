@@ -33,7 +33,6 @@ function showproducts(products) {
   });
 }
 
-// Function to render Cart When items are being added//
 function renderCart(cartItems) {
   cartItems.length > 0;
   let cartContainer = document.querySelector("#items");
@@ -86,7 +85,7 @@ function deleteProduct(id1) {
   let prod_id = product.id;
   console.log(prod_id);
 
-  fetch("https://guarded-lowlands-69569.herokuapp.com/get-Point_of_Sales/", {
+  fetch("https://guarded-lowlands-69569.herokuapp.com/delete-products/", {
     method: "POST",
     body: JSON.stringify({
       id: prod_id,
@@ -125,7 +124,7 @@ function removeItem(id) {
 // Addding Products //
 
 function addtocatalogue() {
-  fetch("https://guarded-lowlands-69569.herokuapp.com/get-Point_of_Sales/", {
+  fetch("https://guarded-lowlands-69569.herokuapp.com/create-products/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -144,10 +143,10 @@ function addtocatalogue() {
       console.log("success");
       if (data["description"] == "Product added succesfully") {
         alert("product added successfuly");
-        window.location.href = "./products.html";
+        window.location.href = "./prod.html";
       } else {
         alert("did not add!, please make sure the information is correct.");
-        window.location.href = "./products.html";
+        window.location.href = "./prod.html";
       }
     });
 }
