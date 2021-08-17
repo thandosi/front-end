@@ -10,12 +10,12 @@
 
 .toll{
 width: 40%;
-background-color: aqua;
+background-color: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
 height: 100vh;
 }
 
 #products{
- background-color: blanchedalmond;
+ background-color: turquoise;
  width: 60%;
  height: 100vh;
 }
@@ -94,7 +94,9 @@ height: 100vh;
   }
 
   #total {
-    border-top: 1px solid;
+    border-top: 1px solid white;
     padding: 0.5em;
     margin-top: 0.5em;
+    justify-content: center;
+    
   }
