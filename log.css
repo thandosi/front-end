@@ -1,0 +1,109 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  .landing{
+    min-height: 100vh;
+    display: flex;
+    padding: 70px;
+  }
+  
+  .welcome{
+    width: 40%;
+    height: 800px;
+    background-color: black;
+  
+  }
+  
+  .hello{
+    color: white;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 200px;
+  }
+  
+  .btn{
+   text-align: center;
+    background-color: black;
+    height: 40px;
+    width: 100px;
+  }
+  
+  
+  p{
+    margin-top: 40px;
+    text-align: center;
+  }
+  .container{
+    position: relative;
+    width: 70%;
+    height: 800px;
+    background-color: violet;
+  }
+  
+  .the-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    
+  }
+  
+  .buttons{
+    background-color: blue;
+    display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  }
+  
+  
+  
+  .the-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: turquoise;
+  }
+  
+  .the-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: purple;
+    transform: rotateY(180deg);
+  }
+  
+  .reg{
+    padding: 50px;
+    justify-content: space-evenly;
+    padding: 2% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 20px;
+  }
+  .form-input {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .button {
+    border-radius: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+  }
+  
+  .sign-in{
+    padding: 50px;
+  }

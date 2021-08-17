@@ -19,6 +19,10 @@ height: 100vh;
  width: 60%;
  height: 100vh;
 }
+.product-content{
+    display: flex;
+    flex-direction: row;
+}
 
 #products {
     display: flex;
@@ -27,7 +31,8 @@ height: 100vh;
     gap: 30px;
   }
   .products {
-    width: 250px;
+    width: 200px;
+    height: 350px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.12);
     display: flex;
     flex-direction: column;
@@ -35,8 +40,8 @@ height: 100vh;
   }
   
   .product-images {
-    width: 100%;
-    height: 150px;
+    width: 80%;
+    height: 100px;
     object-fit: cover;
     padding: 20px;
   }
@@ -59,7 +64,7 @@ height: 100vh;
     padding: 0.5em;
     font-size: 1em;
     margin: 0.5em;
-    min-width: 3em;
+    min-width: 5px;
     border: 1px solid;
     background-color: #eee;
   }
